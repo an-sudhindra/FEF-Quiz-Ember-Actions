@@ -1,0 +1,20 @@
+<h1>Shopping Cart</h1>
+
+{{!-- {{#each model as |cart|}}
+	<section class="col-xs-4 well">
+		<p>Color: {{ cart.color }}</p>
+		<p>Size: {{ cart.size }}</p>
+		<p>Price: {{ cart.price }}</p>
+		<p>Quantity: {{ cart.quantity }}</p>
+	</section>
+{{/each}} --}}
+
+
+
+<ul>
+  {{#each model as |cartItem|}}
+    <li>{{cartItem.color}} {{cartItem.size}} for {{cartItem.price}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
